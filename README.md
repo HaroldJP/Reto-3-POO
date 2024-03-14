@@ -142,20 +142,20 @@ def initialization_rectangle(method):
         height = abs(y1_line_1 - y_line_2)
         rectangle = Rectangle(width, height, x1_line_1, y1_line_1, 0, 0, x_line_2, y_line_2, x1_line_1, y1_line_1, x2_line_1, y2_line_1, x2_line_1, y2_line_1, x_line_2, y_line_2, x_line_2, y_line_2, x_line_3, y_line_3, x_line_3, y_line_3, x1_line_1, y1_line_1)
         
-        if (x2_line_1 != x_line_2) or (x1_line_1 != x_line_3) or (y_line_2 != y_line_3) or (x_line_3 != x1_line_1):
-            print("That's not a rectangle.")
-        else:
-            print("Area:", rectangle.compute_area())
-            print("Perimeter:", rectangle.compute_perimeter())
+        #if (x2_line_1 != x_line_2) or (x1_line_1 != x_line_3) or (y_line_2 != y_line_3) or (x_line_3 != x1_line_1):
+            #print("That's not a rectangle.")
+        #else:
+        print("Area:", rectangle.compute_area())
+        print("Perimeter:", rectangle.compute_perimeter())
 
-            point_x = float(input("Enter the x coordinate of the point: "))
-            point_y = float(input("Enter the y coordinate of the point: "))
-            point = Point(point_x, point_y)
-            interference = rectangle.compute_interference_point(point, method)
-            if interference == True:
-                print("The point is inside the rectangle.")
-            else:
-                print("The point is not inside the rectangle.")
+        point_x = float(input("Enter the x coordinate of the point: "))
+        point_y = float(input("Enter the y coordinate of the point: "))
+        point = Point(point_x, point_y)
+        interference = rectangle.compute_interference_point(point, method)
+        if interference == True:
+            print("The point is inside the rectangle.")
+        else:
+            print("The point is not inside the rectangle.")
 
 def initialization_square(method):
     method = int(input("Enter the method to initialize the square: "))
