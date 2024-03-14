@@ -54,7 +54,7 @@ class Point:
 
 class Line:
     def __init__(self, x1, y1, x2, y2):
-        self.line_start = Point(x1, y2)
+        self.line_start = Point(x1, y1)
         self.line_end = Point(x2, y2)
 
 class Rectangle:
