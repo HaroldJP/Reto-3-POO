@@ -269,3 +269,28 @@ if __name__=="__main__":
 
     print(f"Total price: ${total_price}")
 ```
+
+```mermaid
+classDiagram
+    MenuItem <|-- Lunch
+    MenuItem <|-- Fast_food
+    MenuItem <|-- Beverage
+    MenuItem <|-- Protein
+    Order *-- MenuItem
+    Order : +String items
+    Order : +calculate_total_price()
+    MenuItem: +String name
+    MenuItem: +int price
+    class Lunch{
+      +String kind
+    }
+    class Beverage{
+      -String kind
+    }
+    class Fast_food{
+      +String kind
+    }
+    class Protein {
+        -String kind
+    }
+```
