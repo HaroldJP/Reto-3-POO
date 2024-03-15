@@ -255,16 +255,14 @@ if __name__=="__main__":
     chicken = Protein(name="Chicken", price=5500)
     fish = Protein(name="Mojarra", price=7800)
 
-    # Introduce la orden
+    # Enter your order
     your_order = [water, lentils, chicken, pizza]
 
-    # Crea el objeto Order
     order = Order(your_order)
 
-    # Calcula el precio total de la orden
+    # Total price
     total_price = order.calculate_total_price()
 
-    # Imprime cada objeto de la orden y el precio total
     print("Order:")
     for item in order.items:
         print(f"- {item.name}: ${item.price}")
